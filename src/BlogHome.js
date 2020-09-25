@@ -42,7 +42,7 @@ class BlogHome extends Component {
       const { next_page, previous_page } = this.state.resp.meta;
  
       return (
-        <div>
+        <div className="wrapper">
           {this.state.resp.data.map((post) => {
             return (
               <div key={post.slug}>
